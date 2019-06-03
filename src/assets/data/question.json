@@ -1,0 +1,35 @@
+[
+    {
+        "question": "What is used .angular-cli.json",
+        "options": [
+            {
+                "option": "Used to configure your angular 2 project"
+            },
+            {
+                "option": "Used to link external files"
+            },
+            {
+                "option": "used to install required project packages"
+            }
+        ],
+        "answer": "Used to configure your angular 2 project"
+    },
+    {
+        "question": "Which file is responsible for startup of angular 2 project ?",
+        "options": [
+            {
+                "option": "main.ts"
+            },
+            {
+                "option": "index.js"
+            },
+            {
+                "option": "app.ts"
+            },
+            {
+                "option": "angular.cli.json"
+            }
+        ],
+        "answer": "main.ts"
+    }
+]
