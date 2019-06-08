@@ -1,11 +1,20 @@
 <div class="row quiz">
-    <div *ngFor="let item of questions" class="col-lg-6 col-md-6 col-sm-12">
-        <h5>{{item.question}}</h5>
-        {{questions.options | json}}
-        <ul>
-            <li *ngFor="let option of item.options">
-                <input type="radio" name="{{item.question}}" /> <label>{{option.option}}</label>
-            </li>
-        </ul>
+    <div *ngFor="let item of tempQuestionList" class="col-lg-6 col-md-6 col-sm-12">
+        <div class="question-box">
+            <h5>{{item.question}}</h5>
+            <ul>
+                <li *ngFor="let option of item.options;index as i"
+                    >
+                    <input type="radio" name="{{item.question}}"
+                        [checked]="fnGetOption(option)" [value]="option.option" (change)="fnGetItemDetails(item.question,option.option)" />
+                    <label>{{option.option}}</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-12 btn-group-bottom">
+        <a class="btn btn-primary btn-left" (click)="fnPrevious()" role="button" [hidden]="isPrevious">Previous</a>
+        <a class="btn btn-primary btn-right" (click)="fnNext()" role="button" [hidden]="isNext">Next</a>
+        <a class="btn btn-primary btn-right" (click)="fnFinish()" role="button" [hidden]="isLastPage">Finish</a>
     </div>
 </div>

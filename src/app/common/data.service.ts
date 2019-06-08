@@ -24,26 +24,6 @@ export class DataService {
         }
     }
 
-    public getQuizData2(input: any): Observable<any> {
-        if (config.production) {
-            return this.httpClient.post(config.apiUrl.quiddata2, input, this.httpOptions)
-                .pipe(retry(1), catchError(this.handleError));
-        } else {
-            return this.httpClient.get(config.apiUrl.quiddata2)
-                .pipe(retry(1), catchError(this.handleError));
-        }
-    }
-
-    public getQuizData3(input: any): Observable<any> {
-        if (config.production) {
-            return this.httpClient.post(config.apiUrl.quiddata3, input, this.httpOptions)
-                .pipe(retry(1), catchError(this.handleError));
-        } else {
-            return this.httpClient.get(config.apiUrl.quiddata3)
-                .pipe(retry(1), catchError(this.handleError));
-        }
-    }
-
     /* Error Handler */
     private handleError(error: HttpErrorResponse) {
         if (error.error instanceof ErrorEvent) {

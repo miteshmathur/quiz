@@ -1,35 +1,122 @@
 [
     {
-        "question": "What is used .angular-cli.json",
+        "question": "What is used .angular-cli.json?",
         "options": [
             {
-                "option": "Used to configure your angular 2 project"
+                "option": "Used to configure your angular 2 project",
+                "isSelected": false
             },
             {
-                "option": "Used to link external files"
+                "option": "Used to link external files",
+                "isSelected": false
             },
             {
-                "option": "used to install required project packages"
+                "option": "used to install required project packages",
+                "isSelected": false
             }
         ],
         "answer": "Used to configure your angular 2 project"
     },
     {
-        "question": "Which file is responsible for startup of angular 2 project ?",
+        "question": "Which file is responsible for startup of angular 2 project?",
         "options": [
             {
-                "option": "main.ts"
+                "option": "main.ts",
+                "isSelected": false
             },
             {
-                "option": "index.js"
+                "option": "index.js",
+                "isSelected": false
             },
             {
-                "option": "app.ts"
+                "option": "app.ts",
+                "isSelected": false
             },
             {
-                "option": "angular.cli.json"
+                "option": "angular.cli.json",
+                "isSelected": false
             }
         ],
         "answer": "main.ts"
+    },
+    {
+        "question": "What does AOT stand for?",
+        "options": [
+            {
+                "option": "Angular Object Templates",
+                "isSelected": false
+            },
+            {
+                "option": "Ahead-of-time compilation",
+                "isSelected": false
+            },
+            {
+                "option": "Angular Open Terminal",
+                "isSelected": false
+            }
+        ],
+        "answer": "Ahead-of-time compilation"
+    },
+    {
+        "question": "Which of the following is not a hook in Angular 2 application life cycle?",
+        "options": [
+            {
+                "option": "ngOnChanges",
+                "isSelected": false
+            },
+            {
+                "option": "ngOnInit",
+                "isSelected": false
+            },
+            {
+                "option": "ngAfterViewInit",
+                "isSelected": false
+            },
+            {
+                "option": "ngViewStart",
+                "isSelected": false
+            }
+        ],
+        "answer": "ngViewStart"
+    },
+    {
+        "question": "Which of the following is the correct way to apply a filter?",
+        "options": [
+            {
+                "option": "- Property-value || filter",
+                "isSelected": false
+            },
+            {
+                "option": "- Property-value && filter",
+                "isSelected": false
+            },
+            {
+                "option": "- Property-value | filter",
+                "isSelected": false
+            }
+        ],
+        "answer": "- Property-value | filter"
+    },
+    {
+        "question": "What is the decorator used for configuring your module class?",
+        "options": [
+            {
+                "option": "@NgModule",
+                "isSelected": false
+            },
+            {
+                "option": "@NgApp",
+                "isSelected": false
+            },
+            {
+                "option": "@NgAngular",
+                "isSelected": false
+            },
+            {
+                "option": "@NgConfigure",
+                "isSelected": false
+            }
+        ],
+        "answer": "@NgModule"
     }
 ]

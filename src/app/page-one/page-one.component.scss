@@ -1,0 +1,17 @@
+.answer-list ul {
+    list-style: none;
+}
+
+ul.answer-list > li {
+    margin: 0px 0px 25px 0px;
+}
+.answer-list li {
+    list-style: none;
+}
+
+.right-answer {
+    color: green;
+}
+.wrong-answer {
+    color: orangered;
+}

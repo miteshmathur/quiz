@@ -10,6 +10,9 @@ export class PageOneComponent implements OnInit {
     constructor(private _dataService: DataService) { }
 
     questions: any;
+    answers: any = [];
+    readyAnswerSheet: boolean = false;
+    classAnswer: any = "";
     ngOnInit() {
         this._dataService.getQuizData({}).subscribe(response => {
             this.questions = response;
@@ -18,7 +21,19 @@ export class PageOneComponent implements OnInit {
                 console.log("Get Quiz data :: ", error);
             },
             () => {
-                console.log(this.questions);
+                // console.log(this.questions);
             });
+    }
+
+    fnGetAnswerSheet(event) {
+        this.readyAnswerSheet = true;
+        this.answers = event.answer;
+    }
+
+    fnGetClass(answer, option) {
+        if (answer == option)
+            return "Right answer";
+        else
+            return "Wrong answer";
     }
 }

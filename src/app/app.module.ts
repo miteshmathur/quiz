@@ -3,26 +3,30 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { FormsModule } from '@angular/forms';
 import { DataService } from './common/data.service';
 import { PageOneComponent } from './page-one/page-one.component';
-import { PageTwoComponent } from './page-two/page-two.component';
-import { PageThreeComponent } from './page-three/page-three.component';
 import { QuizComponent } from './common/quiz/quiz.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 @NgModule({
     declarations: [
         AppComponent,
         PageOneComponent,
-        PageTwoComponent,
-        PageThreeComponent,
-        QuizComponent
+        QuizComponent,
+        PageNotFoundComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        HttpClientModule
+        HttpClientModule,
+        FormsModule
     ],
-    providers: [DataService],
-    bootstrap: [AppComponent]
+    providers: [
+        DataService
+    ],
+    bootstrap: [
+        AppComponent
+    ]
 })
 export class AppModule { }

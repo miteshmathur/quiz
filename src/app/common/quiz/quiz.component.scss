@@ -6,11 +6,22 @@
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         padding-inline-start: 0px;
-        
+
         li {
             input {
                 margin-right: 5px;
             }
         }
+    }
+
+    .btn-group-bottom {
+        padding-top: 20px;
+    }
+
+    .question-box {
+        border: 2px solid #eee;
+        padding: 20px;
+        border-radius: 5px;
+        min-height: 16rem;
     }
 }
